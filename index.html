@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Kaleshi Queen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #fff0f5, #ffe6f0);
+      font-family: 'Playfair Display', serif;
+      color: #800040;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3.5em;
+      margin-bottom: 0.2em;
+      color: #cc0066;
+    }
+
+    .heart {
+      font-size: 2.2em;
+      color: #ff3399;
+      animation: pulse 1.5s infinite;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    button {
+      background-color: #ff66a3;
+      border: none;
+      padding: 15px 30px;
+      color: white;
+      font-size: 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-family: 'Dancing Script', cursive;
+      transition: background 0.3s;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #e60073;
+    }
+
+    iframe {
+      margin-top: 40px;
+      width: 90%;
+      max-width: 800px;
+      height: 600px;
+      border: 3px solid #ff66a3;
+      border-radius: 20px;
+      display: none;
+      box-shadow: 0 0 20px rgba(255, 102, 163, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">♥</div>
+  <h1>For You, Anshu</h1>
+  <p>Hey Kaleshi Queen,<br><br>
+  I know you might be ready to fight me for being cheesy, but give your heart a chance today.<br>
+  Inside this page is something I poured my heart into.<br><br>
+  Don’t worry, no cringe... okay maybe a little. But it’s all for you.</p>
+
+  <p><em>(Yes, there's a love letter. No, you can't argue with it.)</em></p>
+
+  <button onclick="document.getElementById('letter').style.display='block';">Click to Melt Your Heart</button>
+
+  <iframe id="letter" src="love-letter.pdf"></iframe>
+</body>
+</html>
